@@ -1,0 +1,81 @@
+body 
+{
+	background-image: url('subtle_stripes.png')
+}
+.header {
+	border-radius: 15px;
+	padding: 15px;
+	position: absolute;
+	margin: auto;
+	top: 10px;
+/*	right: 0;
+	bottom: 0;
+	left: 0;*/
+	width: 96%;
+	height: 3%;
+	background-color: white;
+}
+.feed {
+	border-radius: 15px;
+	padding: 15px;
+	position: absolute;
+	margin: auto;
+	top: 75%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 80%;
+	height: 17%;
+	background-color: white;
+}
+.main 
+{
+	border-radius: 15px;
+	padding: 15px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 80%;
+	height: 40%;
+	background-color: white;
+}
+.inner {
+	float: left;
+	margin: 0 auto;
+	width: 20%;
+	height: 95%;
+	padding-top: 10px;
+	text-align: center;
+}
+.label {
+	text-align: center;
+}
+#text {
+	background-color: #588C7E;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-right-style: none;
+}
+#img {
+	background-color: #F2E394;
+	border-right-style: none;
+}
+
+#video {
+	background-color: #F2AE72;
+	border-right-style: none;
+}
+
+#link {
+	background-color: #D96459;
+	border-right-style: none;
+}
+#connection {
+	background-color: #8C4646;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+

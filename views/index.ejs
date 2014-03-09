@@ -1,0 +1,60 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div id="logo" style="float:left;"><a href='/'>BlinkShare</a></div>
+		<% if (user == null) { %>
+			<div id="account" style="float:right;"><a href='/getin.html'>Login</a></div>
+		<% } else { %>
+			<div id="account" style="float:right;"><%=user %> <a href='/getout.html'>Logout</a></div>
+		<% } %>
+	</div>
+	<div class="main">
+
+		<div id="text" class="inner">
+			<div class='label'>Text</div>
+			<br />
+			<% if (user != null) { %>
+				<%=text %>
+			<% } %>
+			<form name="uploadtext" action="/" method="post"> 
+				<input type="text" name='text' />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+		<div id="img" class="inner">
+			<div class="label">Image</div>
+			<br />
+			<% if (user != null) { %>
+				<img src=<%=image %> style="width: 100px; height: 100px;" />
+			<% } %>
+			<form name="uploadimage" action="/" method="post" enctype="multipart/form-data">
+				<input type="file" name="image" />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+		<div id="video" class="inner">Video</div>
+
+		<div id="link" class="inner">
+			<div class='label'>Link</div>
+			<br />
+			<% if (user != null) { %>
+				<%=link %>
+			<% } %>
+			<form name="uploadlink" action="/" method="post"> 
+				<input type="text" name='link' />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		
+		<div id="connection" class="inner">Connection</div>
+	</div>
+	<div class="feed">
+		Feed
+	</div>
+</body>
+</html>
