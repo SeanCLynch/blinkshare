@@ -1,11 +1,7 @@
 var express = require('express');
 var server = express();
 var AWS = require('aws-sdk');
-AWS.config.update({
-  accessKeyId: 'AKIAIJY4V42D7ECNAHNA',
-  secretAccessKey: '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',
-  region: 'us-east-1'
-});
+AWS.config.loadFromPath('./config.json');
 var s3 = new AWS.S3();
 var fs = require('fs')
 var async = require('async');
