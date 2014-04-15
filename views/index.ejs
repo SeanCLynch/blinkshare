@@ -19,6 +19,7 @@
 			<% if (user != null) { %>
 				<%=text %>
 			<% } %>
+			<br />
 			<form name="uploadtext" action="/" method="post"> 
 				<input type="text" name='text' />
 				<input type="submit" value="Submit" />
@@ -31,6 +32,7 @@
 			<% if (user != null) { %>
 				<img src=<%=image %> style="width: 100px; height: 100px;" />
 			<% } %>
+			<br />
 			<form name="uploadimage" action="/" method="post" enctype="multipart/form-data">
 				<input type="file" name="image" />
 				<input type="submit" value="Submit" />
@@ -45,12 +47,13 @@
 			<% if (user != null) { %>
 				<%=link %>
 			<% } %>
+			<br />
 			<form name="uploadlink" action="/" method="post"> 
 				<input type="text" name='link' />
 				<input type="submit" value="Submit" />
 			</form>
 		</div>
-		
+
 		<div id="connection" class="inner">Connection</div>
 	</div>
 	<div class="feed">
